@@ -156,7 +156,7 @@ body {
 }
 
 .features-section {
-    background-color: black;
+    background-color: #464646;
     padding-top: 40px;
     padding-bottom: 80px;
     text-align: center;
@@ -170,6 +170,7 @@ body {
 }
 
 .features-container {
+    max-width: 830px;
     max-width: 830px;
     margin: auto;
 }
