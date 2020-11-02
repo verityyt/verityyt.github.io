@@ -13,6 +13,11 @@ body {
     padding: 10px;
 }
 
+.navbar-item:focus {
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-item:hover {
     color: #58d5f7;
     text-decoration: none;
