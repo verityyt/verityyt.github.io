@@ -45,8 +45,7 @@
         <div class="hero row">
             <div class="hero-right col-sm-6 col-sm-6">
                 <h1 class="header-headline bold">Hi, I'm verity<br></h1>
-                <h4 class="header-running-text light">A 14 years old Java and Kotlin developer. I have been coding
-                    for almost 4 years now and have already worked on many different projects.</h4>
+                <h4 class="header-running-text light" id="1000"></h4>
                 <a target="_blank" href="https://github.com/verityyt">
                     <button class="hero-btn">Checkout my GitHub!</button>
                 </a>
@@ -80,8 +79,7 @@
                 <img class="feature-img" src="assets/images/responsive.svg">
             </div>
             <h5 class="feature-head-text feature-no-display">KOTLIN</h5>
-            <p class="feature-subtext light feature-no-display">I started working with Kotlin at the beginning of this
-                year.</p>
+            <p class="feature-subtext light feature-no-display">I started working with Kotlin at the beginning 2020.</p>
         </div>
 
         <div class="col-sm-4 feature">
@@ -89,8 +87,7 @@
                 <img class="feature-img" src="assets/images/customizable.svg">
             </div>
             <h5 class="feature-head-text feature-no-display feature-display-mid">JAVA</h5>
-            <p class="feature-subtext light feature-no-display feature-display-mid">About 4 years ago I started
-                programming with Java, my first project was a Minecraft plugin.</p>
+            <p class="feature-subtext light feature-no-display feature-display-mid" id="1001"></p>
         </div>
 
         <div class="col-sm-4 feature">
@@ -326,6 +323,12 @@
         crossorigin="anonymous"></script>
 
 <script src="assets/js/script.js"></script>
+
+<script>
+    let years = 4
+    document.getElementById('1000').textContent = "A 1" + years + " years old Java and Kotlin developer. I have been coding for almost " + years + " years now and have already worked on many different projects."
+    document.getElementById('1001').textContent = "About " + years + " years ago I started programming with Java, my first project was a Minecraft plugin."
+</script>
 
 </body>
 
