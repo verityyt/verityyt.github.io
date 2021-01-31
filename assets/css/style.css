@@ -5,7 +5,7 @@ body {
 }
 
 .header-right {
-    display: none;
+    text-align: center;
 }
 
 .navbar-item {
