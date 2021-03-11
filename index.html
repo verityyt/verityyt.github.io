@@ -43,11 +43,18 @@
     <div class="features-container row">
         <h2 class="features-headline light">SKILLS</h2>
         <div class="col-sm-4 feature">
+            <div class="feature-icon feature-no-display feature-display-last">
+                <img class="bullet-img" src="assets/images/typescript.svg" style="width: 30px;">
+            </div>
+            <h5 class="feature-head-text feature-no-display feature-display-last">TYPESCRIPT</h5>
+            <p class="feature-subtext light feature-no-display feature-display-last">I started working with Typescript in february 2021.</p>
+        </div>
+        <div class="col-sm-4 feature">
             <div class="feature-icon feature-no-display">
                 <img class="feature-img" src="assets/images/kotlin.svg">
             </div>
             <h5 class="feature-head-text feature-no-display">KOTLIN</h5>
-            <p class="feature-subtext light feature-no-display">I started working with Kotlin at the beginning 2020.</p>
+            <p class="feature-subtext light feature-no-display" id="1002"></p>
         </div>
         <div class="col-sm-4 feature">
             <div class="feature-icon feature-no-display feature-display-mid">
@@ -55,14 +62,6 @@
             </div>
             <h5 class="feature-head-text feature-no-display feature-display-mid">JAVA</h5>
             <p class="feature-subtext light feature-no-display feature-display-mid" id="1001"></p>
-        </div>
-        <div class="col-sm-4 feature">
-            <div class="feature-icon feature-no-display feature-display-last">
-                <img class="bullet-img" src="assets/images/unlimited.svg">
-            </div>
-            <h5 class="feature-head-text feature-no-display feature-display-last">OTHERS</h5>
-            <p class="feature-subtext light feature-no-display feature-display-last">Checkout my GitHub Profile to see
-                all my skills.</p>
         </div>
     </div>
 </div>
@@ -185,6 +184,7 @@
     let years = 5
     document.getElementById('1000').textContent = "A 1" + years + " years old Java and Kotlin developer. I have been coding for almost " + years + " years now and have already worked on many different projects."
     document.getElementById('1001').textContent = "About " + years + " years ago I started programming with Java, my first project was a Minecraft plugin."
+    document.getElementById('1002').textContent =  "About " + (years - 4) + " year ago I wrote my first code with Kotlin."
 </script>
 </body>
 </html>
