@@ -10,6 +10,14 @@
     #skills .container .row .item {
         width: 20%;
     }
+
+    #skills .title {
+        font-size: 2rem;
+    }
+
+    #connect .title {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -74,5 +82,13 @@
 
     #connect .container .row .item .desc {
         font-size: .7rem;
+    }
+
+    #skills .title {
+         font-size: 1.5rem;
+     }
+
+    #connect .title {
+        font-size: 1.5rem;
     }
 }
