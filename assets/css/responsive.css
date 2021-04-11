@@ -1,0 +1,52 @@
+@media screen and (max-width: 635px) {
+    #landing .title {
+        font-size: 6rem;
+    }
+
+    #landing .subtitle {
+        font-size: 2rem;
+    }
+
+    #skills .container .row .item {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #landing .title {
+        font-size: 5rem;
+    }
+
+    #landing .subtitle {
+        font-size: 1.5rem;
+    }
+    #skills .container .row .item img {
+        width: 75px;
+        height: 75px;
+    }
+    #skills .container .row .item .desc {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #landing .title {
+        letter-spacing: -3px;
+        font-size: 3rem;
+    }
+
+    #landing .subtitle {
+        font-size: .75rem;
+    }
+
+    #skills .container .row .item {
+        width: 30%;
+    }
+    #skills .container .row .item img {
+        width: 45px;
+        height: 45px;
+    }
+    #skills .container .row .item .desc {
+        font-size: .7rem;
+    }
+}
