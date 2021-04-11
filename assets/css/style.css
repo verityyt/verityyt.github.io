@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    -webkit-user-select: none;
 }
 
 section {
@@ -37,10 +37,6 @@ section {
     font-weight: 500;
     font-size: 9rem;
     color: white;
-}
-
-#landing .title:hover {
-    color: #b5b5b5;
 }
 
 #landing .subtitle {
