@@ -1,5 +1,5 @@
 new FullPageScroll('full-page', {
-    transitionTime: 1000,
+    transitionTime: 500,
     goToTopOnLast: false
 });
 
