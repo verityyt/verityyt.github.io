@@ -6,11 +6,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
-#indicator > div {
+.indicator-container {
+    width: 100%;
+    display: flex;
+}
+
+.indicator-container div {
     background-color: white;
     width:10px;
     height:10px;
@@ -19,6 +22,18 @@
     cursor: pointer;
 }
 
-#indicator > div.active {
+.indicator-container > div.active {
     transform: scale(1.6);
+}
+
+.indicator-text {
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-top: 5px;
+}
+
+.hidden {
+    display: none;
 }
