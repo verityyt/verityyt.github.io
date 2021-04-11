@@ -20,11 +20,22 @@
     #landing .subtitle {
         font-size: 1.5rem;
     }
+
     #skills .container .row .item img {
         width: 75px;
         height: 75px;
     }
+
     #skills .container .row .item .desc {
+        font-size: .8rem;
+    }
+
+    #connect .container .row .item img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #connect .container .row .item .desc {
         font-size: .8rem;
     }
 }
@@ -42,11 +53,26 @@
     #skills .container .row .item {
         width: 30%;
     }
+
     #skills .container .row .item img {
         width: 45px;
         height: 45px;
     }
+
     #skills .container .row .item .desc {
+        font-size: .7rem;
+    }
+
+    #connect .container .row .item {
+        width: 30%;
+    }
+
+    #connect .container .row .item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #connect .container .row .item .desc {
         font-size: .7rem;
     }
 }
