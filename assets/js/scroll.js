@@ -1,5 +1,3 @@
-console.log("Init scroll")
-
 new FullPageScroll('full-page', {
     transitionTime: 1000,
     goToTopOnLast: false
