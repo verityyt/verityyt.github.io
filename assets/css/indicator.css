@@ -1,0 +1,24 @@
+#indicator {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+#indicator > div {
+    background-color: white;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#indicator > div.active {
+    transform: scale(1.6);
+}
