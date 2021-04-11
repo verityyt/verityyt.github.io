@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.fullscreen {
+    width: 100%;
+    height: 100vh;
+}
+
+/* LANDING */
+
+#landing {
+    background: url("../images/background.png");
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing .title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 9%;
+    color: white;
+}
+
+#landing .subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+}
+
+/* SKILLS */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+}
+
+#skills .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#skills .container .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+
+#skills .container .row .item {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+}
+
+#skills .container .row .item .desc {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+}
+
+#skills .container .row .item img {
+    width: 100px;
+    height: 100px;
+}
