@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateIndicatorColor(index) {
     let color = "white"
 
-    if (index == 1 || index == 3) {
+    if (isOdd(index)) {
         color = "#1f232b"
     }
 
@@ -99,4 +99,11 @@ function updateIndicatorColor(index) {
         text.style.color = color
 
     }
+}
+
+function isOdd(value) {
+    if (value % 2 != 0)
+        return true;
+    else
+        return false;
 }
