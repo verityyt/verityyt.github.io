@@ -30,6 +30,18 @@
         font-size: 2rem;
     }
 
+    #connect .container .row .item {
+        width: 20%;
+    }
+
+    #projects .title {
+        font-size: 2rem;
+    }
+
+    #projects .container .row .item {
+        width: 20%;
+    }
+
     #about .title {
         font-size: 2rem;
     }
@@ -68,6 +80,15 @@
     }
 
     #connect .container .row .item .desc {
+        font-size: .8rem;
+    }
+
+    #projects .container .row .item img {
+        width: 75px;
+        height: 75px;
+    }
+
+    #projects .container .row .item .desc {
         font-size: .8rem;
     }
 
@@ -125,6 +146,23 @@
     }
 
     #connect .title {
+        font-size: 1.5rem;
+    }
+
+    #projects .container .row .item {
+        width: 30%;
+    }
+
+    #projects .container .row .item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #projects .container .row .item .desc {
+        font-size: .7rem;
+    }
+
+    #projects .title {
         font-size: 1.5rem;
     }
 

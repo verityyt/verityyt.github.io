@@ -180,3 +180,54 @@ section {
     font-weight: 300;
     font-size: 1.5rem;
 }
+
+/* PROJECTS */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f232b;
+}
+
+#projects .title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+#projects .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#projects .container .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50%;
+}
+
+#projects .container .row .item {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-items: center;
+}
+
+#projects .container .row .item .desc {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+#projects .container .row .item img {
+    width: 100px;
+    height: 100px;
+}
