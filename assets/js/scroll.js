@@ -28,7 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const text = document.createElement("p")
 
-        switch (index) {
+        const nodes = document.getElementById("full-page").childNodes
+        let content = ""
+
+        for (let i = 0; i < nodes.length; i++) {
+            if(i === index) {
+                content = document.getElementById("full-page").children[i].getAttribute("display")
+            }
+        }
+
+        text.textContent = content
+        if(index > 0) {
+            text.className = "indicator-text hidden"
+        }else {
+            text.className = "indicator-text"
+        }
+
+        /*switch (index) {
             case 0:
                 text.textContent = "Home"
                 text.className = "indicator-text"
@@ -40,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
             case 2:
                 text.textContent = "Connect"
                 text.className = "indicator-text hidden"
-        }
+        }*/
 
         container.appendChild(dot)
         container.appendChild(text)
