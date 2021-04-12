@@ -32,15 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
         let content = ""
 
         for (let i = 0; i < nodes.length; i++) {
-            if(i === index) {
+            if (i === index) {
                 content = document.getElementById("full-page").children[i].getAttribute("display")
             }
         }
 
         text.textContent = content
-        if(index > 0) {
+        if (index > 0) {
             text.className = "indicator-text hidden"
-        }else {
+        } else {
             text.className = "indicator-text"
         }
 
@@ -68,50 +68,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.appendChild(indicator);
     fps.onslide = function () {
-        let removeFrom = document.createElement("div")
+        setTimeout(function () {
+            let removeFrom = document.createElement("div")
 
-        slideIndicators.forEach(function (slideIndicator, index) {
-            if (index === fps.currentSlide) {
-                slideIndicator.className = "active";
-            } else {
-                slideIndicator.className = "";
-            }
+            slideIndicators.forEach(function (slideIndicator, index) {
+                if (index === fps.currentSlide) {
+                    slideIndicator.className = "active";
+                } else {
+                    slideIndicator.className = "";
+                }
+
+                const nodes = document.getElementById("indicator").childNodes
+
+                for (let i = 0; i < nodes.length; i++) {
+                    const text = nodes[i].childNodes[1]
+                    text.classList.add("hidden")
+
+                    if (i === fps.currentSlide) {
+                        removeFrom = text
+                    }
+                }
+            });
+
+            removeFrom.classList.remove("hidden")
 
             updateIndicatorColor(fps.currentSlide)
-
-            const nodes = document.getElementById("indicator").childNodes
-
-            for (let i = 0; i < nodes.length; i++) {
-                const text = nodes[i].childNodes[1]
-                text.classList.add("hidden")
-
-                if (i === fps.currentSlide) {
-                    removeFrom = text
-                }
-            }
-
-        });
-
-        removeFrom.classList.remove("hidden")
+        }, 250)
     }
 });
 
 function updateIndicatorColor(index) {
-    setTimeout(function () {
-        let color = "white"
+    let color = "white"
 
-        if (index == 1) {
-            color = "#1f232b"
-        }
+    if (index == 1) {
+        color = "#1f232b"
+    }
 
-        const nodes = document.getElementById("indicator").childNodes
-        for (let i = 0; i < nodes.length; i++) {
-            const dot = nodes[i].childNodes[0]
-            const text = nodes[i].childNodes[1]
+    const nodes = document.getElementById("indicator").childNodes
+    for (let i = 0; i < nodes.length; i++) {
+        const dot = nodes[i].childNodes[0]
+        const text = nodes[i].childNodes[1]
 
-            dot.style.backgroundColor = color
-            text.style.color = color
+        dot.style.backgroundColor = color
+        text.style.color = color
 
-        }
-    }, 250)
+    }
 }
