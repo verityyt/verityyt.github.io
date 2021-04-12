@@ -1,3 +1,14 @@
+@media screen and (max-width: 1000px) {
+    #about .text {
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    #about .logo {
+        width: 300px;
+    }
+}
+
 @media screen and (max-width: 635px) {
     #landing .title {
         font-size: 6rem;
@@ -17,6 +28,19 @@
 
     #connect .title {
         font-size: 2rem;
+    }
+
+    #about .title {
+        font-size: 2rem;
+    }
+
+    #about .text {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+    #about .logo {
+        width: 225px;
     }
 }
 
@@ -46,6 +70,18 @@
     #connect .container .row .item .desc {
         font-size: .8rem;
     }
+
+    #about .container {
+        flex-direction: column;
+    }
+
+    #about .text {
+        width: 70%;
+    }
+
+    #about .logo {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -71,6 +107,10 @@
         font-size: .7rem;
     }
 
+    #skills .title {
+        font-size: 1.5rem;
+    }
+
     #connect .container .row .item {
         width: 30%;
     }
@@ -84,11 +124,11 @@
         font-size: .7rem;
     }
 
-    #skills .title {
-         font-size: 1.5rem;
-     }
-
     #connect .title {
+        font-size: 1.5rem;
+    }
+
+    #about .title {
         font-size: 1.5rem;
     }
 }

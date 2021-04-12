@@ -146,3 +146,37 @@ section {
     width: 100px;
     height: 100px;
 }
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    flex-direction: column;
+}
+
+#about .title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+}
+
+#about .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about .logo {
+    width: 400px;
+}
+
+#about .text {
+    width: 50%;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}

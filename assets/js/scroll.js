@@ -44,20 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
             text.className = "indicator-text"
         }
 
-        /*switch (index) {
-            case 0:
-                text.textContent = "Home"
-                text.className = "indicator-text"
-                break;
-            case 1:
-                text.textContent = "Skills"
-                text.className = "indicator-text hidden"
-                break;
-            case 2:
-                text.textContent = "Connect"
-                text.className = "indicator-text hidden"
-        }*/
-
         container.appendChild(dot)
         container.appendChild(text)
 
@@ -100,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateIndicatorColor(index) {
     let color = "white"
 
-    if (index == 1) {
+    if (index == 1 || index == 3) {
         color = "#1f232b"
     }
 
