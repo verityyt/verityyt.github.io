@@ -128,13 +128,15 @@
         font-size: 1.5rem;
     }
 
+    #about .logo {
+        width: 125px;
+    }
+
     #about .title {
         font-size: 1.5rem;
     }
-}
 
-@media screen and (max-width: 350px) {
     #about .text {
-        font-size: .75rem;
+        font-size: 0.75rem;
     }
 }
